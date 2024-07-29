@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <img src="logo.png"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="login.html" id="login-link">Login</a>
+            <a href="add_review.html" id="add_review-link">Add review</a>
+        </nav>
+    </header>
     <main>
+        <div class="place-details">
+            <!-- Detailled image-->
+            <div class="place-image-large">
+            <!-- Detailed information -->
+            <div class="place-info">
+                <h2>Place Name</h2>
+                <p><strong>Host:</strong> Host name</p>
+                <p><strong>Price per night:</strong> $150</p>
+                <p><strong>Location:</strong> Town, Country</p>
+                <p><strong>Description:</strong> This is a detailed description of the place.</p>
+                <p><strong>Convenience:</strong> WiFi, Parking, Swimming pool, etc.</p>
+            </div>
+            </div>
+        </div>
         <section id="place-details">
             <!-- Place details will be populated dynamically -->
         </section>
@@ -24,6 +45,10 @@
             </form>
         </section>
     </main>
+    <!-- Footer -->
+    <footer>
+        <a>© 2024 HBnB Evolution. All rights reserved</a>
+     </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
