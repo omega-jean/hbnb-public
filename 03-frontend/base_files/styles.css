@@ -215,6 +215,8 @@ h2 {
     background-color: #ff8c00;
 }
 
+
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -231,4 +233,32 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.google-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa833;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
 }
