@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Accommodations on Airbnb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico" type="image/ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="login.html" alt="Logo" class="logo">
+            <a href="place.html" id="place">Place</a>
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Available Places</h2>
+        <section id="filter">
+            <label for="country-filter">Filter by country:</label>
+            <select id="country-filter">
+                <option value="1">All</option>
+            </select>
+        </section>
+        <section id="places-list">
+            <div class="place-card">
+                <h3>Beautiful Beach House</h3>
+                <p>Price per night: $150</p>
+                <p>Location: Los Angeles, United States</p>
+                <button>View Details</button>
+            </div>
+            <div class="place-card">
+                <h3>Cozy Cabin</h3>
+                <p>Price per night: $100</p>
+                <p>Location: Toronto, Canada</p>
+                <button>View Details</button>
+            </div>
+            <div class="place-card">
+                <h3>Modern Apartment</h3>
+                <p>Price per night: $200</p>
+                <p>Location: New York, United States</p>
+                <button>View Details</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

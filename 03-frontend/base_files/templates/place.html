@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="icon.ico" type="image/ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Logo" class="nav-logo"/>
+            <a href="index.html" id="home-link">Home</a>
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+    <div>
+    </div>
+    <main>
+        <section id="place-details">
+            <div class="place-details">
+                <h2>Beautiful Beach House</h2>
+                <div class="place-image-large">
+                </div>
+                <div class="place-info">
+                    <div class="host-info">
+                        <p><strong>Host:</strong> John Doe</p>
+                        <p><strong>Price per night:</strong> $150</p>
+                        <p><strong>Location:</strong> Los Angeles, United States</p>
+                        <p><strong>Description:</strong> A beautiful beach house with amazing views.</p>
+                        <p><strong>Amenities:</strong> WiFi, pool, Air conditioning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review-card">
+                <p><strong>Jane Smith:</strong></p>
+                <p><strong>Comment:</strong> Great place to stay!</p>
+                <div class="star-rating">
+                    <span>Rating:</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <p><strong>Robert Brown:</strong></p>
+                <p><strong>Comment:</strong> Amazing location and very comfortable.</p>
+                <div class="star-rating">
+                    <span>Rating:</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </section>
+        <section id="add-review">
+            <h2><a>Add a review</a></h2>
+            <form id="review-form">
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 ★</option>
+                    <option value="2">2 ★★</option>
+                    <option value="3">3 ★★★</option>
+                    <option value="4">4 ★★★★</option>
+                    <option value="5">5 ★★★★★</option>
+                </select>
+                <button type="submit">Submit review</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div> 
+        </div>
+        <a>© 2024 HBnB Evolution. All rights reserved</a>
+     </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
