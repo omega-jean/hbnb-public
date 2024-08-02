@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Accommodations on Airbnb</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.ico" type="image/ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}" type="image/ico">
 </head>
 <body>
     <header>
         <nav>
-            <img src="login.html" alt="Logo" class="logo">
-            <a href="place.html" id="place">Place</a>
-            <a href="login.html" id="login-link">Login</a>
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="nav-logo"/>
+            <a href="{{ url_for('index') }}" id="home-link">Home</a>
+            <a href="places" id="place-link">Places</a>
+            <a href="login" id="login-link">Login</a>
         </nav>
     </header>
     <main>
@@ -47,6 +48,6 @@
     <footer>
         <p>© 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Airbnb</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.ico" type="image/ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}" type="image/ico">
 </head>
 <body>
     <header>
         <nav>
-            <img src="logo.png" alt="Logo" class="logo">
-            <a href="index.html" id="home-link">Home</a>
-            <a href="login.html" id="login-link">Login</a>
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="nav-logo"/>
+            <a href="{{ url_for('index') }}" id="home-link">Home</a>
+            <a href="login" id="login-link">Login</a>
         </nav>
     </header>
     <main>
@@ -30,7 +30,7 @@
 
             <!-- Google Login Button -->
             <a href="https://accounts.google.com/signin/oauth/error/v2?authError=Cg9pbnZhbGlkX3JlcXVlc3QS3gEKWW91IGNhbid0IHNpZ24gaW4gdG8gdGhpcyBhcHAgYmVjYXVzZSBpdCBkb2Vzbid0IGNvbXBseSB3aXRoIEdvb2dsZSdzIE9BdXRoIDIuMCBwb2xpY3kgZm9yIGtlZXBpbmcgYXBwcyBzZWN1cmUuCgpZb3UgY2FuIGxldCB0aGUgYXBwIGRldmVsb3BlciBrbm93IHRoYXQgdGhpcyBhcHAgZG9lc24ndCBjb21wbHkgd2l0aCBvbmUgb3IgbW9yZSBHb29nbGUgdmFsaWRhdGlvbiBydWxlcy4KICAaWWh0dHBzOi8vZGV2ZWxvcGVycy5nb29nbGUuY29tL2lkZW50aXR5L3Byb3RvY29scy9vYXV0aDIvcG9saWNpZXMjc2VjdXJlLXJlc3BvbnNlLWhhbmRsaW5nIJADKhgKDHJlZGlyZWN0X3VyaRIIaHR0cHM6Ly8%3D&client_id=622686756548-j87bjniqthcq1e4hbf1msh3fikqn892p.apps.googleusercontent.com&flowName=GeneralOAuthFlow" class="google-login-btn">
-                <img src="google-logo.png" alt="Google Logo" class="google-logo">
+                <img src="{{ url_for('static', filename='google-logo.png') }}" alt="Google Logo" class="google-logo">
                 Sign in with Google
             </a>
         </div>
@@ -40,6 +40,6 @@
         <div></div>
         <a>© 2024 HBnB Evolution. All rights reserved</a>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
